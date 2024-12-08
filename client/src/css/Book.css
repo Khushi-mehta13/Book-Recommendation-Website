@@ -1,0 +1,166 @@
+
+.book-list {
+  background: linear-gradient(rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Ensure 4 columns */
+  gap: 5px 20px; /* Reduced row gap (5px) and a wider column gap (20px) for balance */
+  padding: 5px;
+  justify-content: center; /* Centers the book list */
+  margin-bottom: 5px;
+}
+
+.book-list img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.book-details {
+  margin-top: 50px; /* Reduced margin for a more compact display */
+  max-width: 70%;
+  max-height: 80%;
+  border: 5px solid rgba(255, 244, 244, 0.8);
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.Edit {
+  margin-right: 40px; /* Slightly reduced margin for better spacing */
+  margin-top: 20px; /* Reduced top margin */
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: rgb(219, 209, 222);
+  border: 1px solid black;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+.delete {
+  background-color: rgb(255, 124, 0);
+  border-radius: 20px;
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+
+/* Search bar container */
+
+
+.book-list #search {
+  grid-column: 1 / -1; /* Makes the search bar span across all columns */
+  display: flex;
+  justify-content: center; /* Centers the search bar horizontally */
+  margin-bottom: 10px;
+  
+/* Adds space between search bar and book list */
+}
+
+.book-card {
+ background-color:linear-gradient(rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%) ;
+  border-radius: 15px; /* Rounded corners */
+  padding: 10px;
+  height: 99%;
+  color: aliceblue;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card effect */
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+.recommended-books{
+  margin: 0px;
+  padding: 0px;
+}
+#Loading{
+  font-size: larger;
+  padding: 10px;
+}
+#recommend {
+  position: relative;
+  right: 30px;
+  background-color: rgb(255, 124, 0);
+  width: 102%; /* Ensures full width */
+  height: 60px; /* Adjust height to give space for centering */
+  box-sizing: border-box;
+  font-size: 200%; /* Adjust font size as needed */
+  color: white;
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 0; /* Remove default margin */
+}
+
+.book-card p{
+  padding: -10px;
+  margin-left: 2px;
+  text-align: center;
+}
+
+.placeholder {
+  background-color: transparent; /* or any background color that matches your design */
+  border: 1px dashed transparent; /* Optional: helps in maintaining the layout */
+}
+
+
+.book-card:hover {
+  transform: translateY(-5px); /* Hover effect to lift the card slightly */
+}
+
+
+
+
+/* Search bar container */
+.search-bar {
+   /* Set a width for the search bar */
+   /* Center the search bar */
+  background: linear-gradient(rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+  width:100%;
+  display:block; /*  blUse flexbox for layout */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+}
+
+#bookhead{
+ 
+  background-color:rgb(255, 124, 0) ;
+  height: 90px;
+  color: white;
+  position: relative;
+  text-align: center;
+  margin-top: -5px !important;
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+ 
+  
+}
+.search-bar input {
+  margin-top: 10px;
+  margin-left: 600px;
+  align-items: center;
+  height: 15px;
+  flex: 1; /* Make input take the remaining space */
+  border: none; /* Remove default border */
+  outline: none; /* Remove outline on focus */
+  padding: 10px; /* Padding inside the input */
+  font-size: 16px; /* Font size */
+  border-radius: 20px 0 0 20px; /* Match the container's corners */
+}
+
+.search-bar button {
+  background-color: rgb(0, 123, 255); /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  padding: 10px 15px; /* Padding for the button */
+  cursor: pointer; /* Cursor change on hover */
+  border-radius: 0 20px 20px 0; /* Match the container's corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  
+}
+
+.search-bar button:hover {
+  background-color: rgb(0, 105, 217); /* Darker color on hover */
+}
+

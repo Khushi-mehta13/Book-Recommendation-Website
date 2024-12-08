@@ -1,0 +1,77 @@
+
+.book-detail{
+    background: linear-gradient(rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    height: 900px;
+    color:white;
+    width: 6000px;
+    margin: 0px;
+    margin-top: 40px;
+}
+h2{
+  margin-left: 10%;
+  padding: 50px;
+}
+.book-detail-container{
+    background-color: lightgray ;
+    width: 10%;
+    height: 40%;
+    margin-left: 140px;
+    margin-top: 30px;
+    padding: 20px;
+    color: black;
+    border-radius: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+.book-detail-container:hover{
+    transform: scale(1.1);
+}
+
+#title{
+    margin-top: -210px;
+    margin-bottom: 30px;
+}
+#author{
+    margin-bottom: 30px;
+}
+#price{
+    margin-bottom: 30px;
+}
+p{
+    font-size: 18px;
+    margin-left: 300px;
+    text-align: justify;
+}
+.status {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.status.pending {
+    color: orange;
+}
+
+.status.approved {
+    color: green;
+}
+
+.status.rejected {
+    color: red;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+.contact-request-button{
+    margin-left:300px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: rgb(255, 124, 0);
+    color: white;
+    transition: transform 0.5s ease-in-out;
+}
+.contact-request-button:hover{
+    transform: scale(1.1);
+}

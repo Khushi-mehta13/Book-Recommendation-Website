@@ -1,0 +1,11 @@
+import mongoose from "mongoose";
+
+const adminSchema = new mongoose.Schema({
+    username: { type: String, required: true, unique: true }, // 'require' corrected to 'required'
+    password: { type: String, required: true },
+    salt: { type: String, required: true } // Add salt field
+});
+
+const Admin = mongoose.model('Admin', adminSchema);
+
+export { Admin };

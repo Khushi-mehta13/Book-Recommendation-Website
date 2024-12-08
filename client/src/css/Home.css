@@ -1,0 +1,36 @@
+.Home {
+  display: flex;
+  background: linear-gradient(rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+  color: #ffc107;
+  height: 92vh;
+  padding-inline: 30px;
+}
+
+.Home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-top: 200px;
+}
+
+.Home-text {
+  font-size: 3rem;
+  display: inline-block;
+  margin-bottom: 0px;
+  word-spacing: 0.01%;
+  justify-content: right;
+  margin-right: 490px;
+}
+
+.Home-description {
+  font-size: 30px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.Home-image {
+  display: block;
+  background: url('/Images/abundant-collection-antique-books-wooden-shelves-generated-by-ai_188544-29660.avif') center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
